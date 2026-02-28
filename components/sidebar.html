@@ -1,0 +1,39 @@
+<div class="sidebar">
+  <h2><a href="/mobile_repository/dashboard.php">Mobile Repo.</a></h2>
+
+  <ul>
+    <li>
+      <a href="/mobile_repository/dashboard.php">Home</a>
+    </li>
+    <li>
+      <a href="/mobile_repository/mobiles/add_mobile.php">Add Mobile</a>
+    </li>
+    <li>
+      <a href="/mobile_repository/mobiles/view_all.php">View All Mobiles</a>
+    </li>
+    <li>
+      <a href="/mobile_repository/mobiles/filter_10_20.php">Price Between 10k–20k</a>
+    </li>
+    <li>
+      <a href="/mobile_repository/mobiles/filter_above_20.php">Price Greater Than 20k</a>
+    </li>
+  </ul>
+
+  <div>
+    <a id="logout" href="/mobile_repository/auth/logout.php">Logout</a>
+  </div>
+</div>
+
+
+<script>
+  const links = document.querySelectorAll("ul a");
+  const currentPath = window.location.pathname.split('/').pop();  
+  
+  links.forEach((link)=>{
+    const linkPath = link.getAttribute("href").split('/').pop();
+    
+    if(linkPath === currentPath){
+      link.classList.add("active");
+    }
+  });
+</script>
