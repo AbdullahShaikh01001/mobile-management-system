@@ -5,7 +5,7 @@
   $username = mysqli_real_escape_string($conn, trim($_POST['username'])); //this will prevent sql injection
   $password = mysqli_real_escape_string($conn, trim($_POST['password']));
 
-  $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+  $sql = "SELECT * FROM userlogin WHERE username='$username' AND password='$password'";
   $result = $conn->query($sql);
 
   if(mysqli_num_rows($result) == 1){

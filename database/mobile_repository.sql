@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 20, 2026 at 11:28 AM
+-- Generation Time: Feb 28, 2026 at 11:22 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,34 +39,34 @@ CREATE TABLE `mobile_phones` (
 --
 
 INSERT INTO `mobile_phones` (`id`, `name`, `brand`, `price`) VALUES
-(17, 'pixel 9 pro', 'google', 110000.00),
-(18, 'Note 10', 'Infinix', 20000.00),
-(19, 'pixel 5 haah', 'google', 40000.00),
-(22, 'iphone 4', 'iphone', 10000.00),
-(24, 'Nokia 3233', 'Nokia', 5000.00),
-(26, 'pixel 10 pro', 'google', 250000.00),
-(27, 'Spark 40', 'Tecno', 15000.00),
-(29, 'Note 12', 'Infinix', 20000.00),
-(30, 'iphone 12 Pro Max', 'iphone', 90000.00),
-(33, 'iphone 17 pro max', 'iphone', 250000.00);
+(24, 'Nokia 3233', 'Nokia', 7000.00),
+(33, 'iphone 17 pro max', 'iphone', 270000.00),
+(41, 'pixel 6 pro max', 'google', 75000.00),
+(45, 'pixel 10 pro max', 'google', 300000.00),
+(48, 'Note 11', 'Infinix', 15000.00),
+(49, 'Note 11 pro', 'Infinix', 18000.00),
+(50, 'pixel 5', 'google', 20000.00),
+(51, 'Note 10 pro', 'Infinix', 14000.00),
+(52, 'iphone 10', 'iphone', 50000.00),
+(53, 'iphone 11 pro', 'iphone', 75000.00);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `userlogin`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `userlogin` (
   `id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data for table `userlogin`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`) VALUES
+INSERT INTO `userlogin` (`id`, `username`, `password`) VALUES
 (1, 'admin', '1234'),
 (2, 'Abdullah', '1234');
 
@@ -81,9 +81,9 @@ ALTER TABLE `mobile_phones`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indexes for table `userlogin`
 --
-ALTER TABLE `users`
+ALTER TABLE `userlogin`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -94,12 +94,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `mobile_phones`
 --
 ALTER TABLE `mobile_phones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT for table `userlogin`
 --
-ALTER TABLE `users`
+ALTER TABLE `userlogin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
