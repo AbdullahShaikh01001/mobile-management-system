@@ -30,9 +30,11 @@
   <!-- sidebar end -->
 
   <div class="main">
-      <div class="navbar">
-          Welcome Back <?php echo $_SESSION['user']; ?> 👋 
-      </div>
+    <!-- navbar start-->
+    <?php
+      include("./components/navbar.php");
+    ?>
+    <!-- navbar end-->
 
       <div class="cards">
           <div class="card">
