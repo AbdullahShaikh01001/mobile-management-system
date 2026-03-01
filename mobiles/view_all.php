@@ -11,7 +11,7 @@
   <title>Dashboard - View All Mobiles</title>
   <link rel="stylesheet" href="../assets/style.css">
   <link rel="stylesheet" href="../assets/dashboardLayout.css">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../assets/sweetAlert.js"></script>
 </head>
 <body>
 
